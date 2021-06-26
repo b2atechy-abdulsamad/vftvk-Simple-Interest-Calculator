@@ -6,9 +6,10 @@ function compute() {
     var interest = principal * years * rate / 100;
     var yearInTheFuture = new Date().getFullYear() + years;
     //Create the Interest text
-    document.getElementById("result").innerHTML = "Interest : If you deposit <mark>" + principal + "</mark>,<br/>" +
-        "at an interest rate of <mark>" + rate + "</mark>,<br/>" +
-        "You will receive an amount of <mark>" + interest + "</mark>,<br/> " +
+    document.getElementById("result").innerHTML = 
+        "Interest : If you deposit <mark>" + principal + "</mark>,<br/>\n" +
+        "at an interest rate of <mark>" + rate + "%</mark>,<br/>\n" +
+        "You will receive an amount of <mark>" + interest + "</mark>,<br/>\n " +
         "in the year <mark>" + yearInTheFuture + "</mark>";
 
 }
