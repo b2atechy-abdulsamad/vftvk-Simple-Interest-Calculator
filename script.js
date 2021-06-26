@@ -18,7 +18,7 @@ function getSliderValue() {
     document.getElementById("rateSpan").innerHTML = document.getElementById("rate").value;
 }
 
-//Check for positive values
+//Check for positive value
 function validateAmount() {
     var principal = document.getElementById("principal").value;
     var biggerThanZero = parseInt(principal) > 0;
